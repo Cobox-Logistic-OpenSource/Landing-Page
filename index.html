@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Co-Box Logistics | Gestión de Flotas de Transporte</title>
+  <meta name="description" content="Digitaliza tu gestión de flotas. Programa rutas, captura odómetro, controla combustible y temperatura en un solo lugar.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="#" class="logo">
+          <img src="assets/images/logo.png" alt="Co-Box Logistics Logo">
+          <span>Co-Box Logistics</span>
+        </a>
+
+        <nav class="desktop-nav">
+          <ul>
+            <li><a href="#features" data-i18n="nav.features">Características</a></li>
+            <li><a href="#how-it-works" data-i18n="nav.howItWorks">Cómo funciona</a></li>
+            <li><a href="#pricing" data-i18n="nav.pricing">Precios</a></li>
+            <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonios</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+          </ul>
+          <div class="nav-buttons">
+            <select id="languageSelect" class="language-select">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+            <a href="#contact" class="btn btn-primary" data-i18n="nav.demo">Solicita tu demo</a>
+          </div>
+        </nav>
+
+        <button class="mobile-menu-btn" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul>
+          <li><a href="#features" data-i18n="nav.features">Características</a></li>
+          <li><a href="#how-it-works" data-i18n="nav.howItWorks">Cómo funciona</a></li>
+          <li><a href="#pricing" data-i18n="nav.pricing">Precios</a></li>
+          <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonios</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" data-i18n="nav.demo">Solicita tu demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="fade-in" data-i18n="hero.title">Digitaliza tu gestión de flotas</h1>
+        <p class="fade-in" data-i18n="hero.text">Programa rutas, captura odómetro, controla combustible y temperatura… todo en un solo lugar.</p>
+        <div class="hero-buttons fade-in">
+          <a href="#pricing" class="btn btn-secondary" data-i18n="hero.freeTrial">Prueba gratis 14 días</a>
+          <button class="btn btn-outline" id="videoBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span data-i18n="hero.watchDemo">Ver demo en vídeo</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Modal -->
+  <div class="modal" id="videoModal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="video-container">
+        <div class="video-placeholder" data-i18n="videoModal.title">Video demo de Co-Box Logistics</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="about.title">Sobre Nosotros</h2>
+        <p data-i18n="about.text">La startup Co-Box Logistics ofrece una solución tecnológica avanzada al sector del transporte de carga en Perú.</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p data-i18n="about.description">Implementamos una plataforma web inteligente encargada de segmentar y optimizar los procesos logísticos en distintas fases. Estas comprenden el control de kilometraje de las unidades, la captura de evidencias fotográficas al momento de la entrega, la geolocalización en tiempo real y la generación automatizada de reportes e indicadores de desempeño.</p>
+        </div>
+        <div class="about-image">
+          <img src="assets/images/about-image.jpg" alt="Co-Box Logistics Platform">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="features.header.title">Características clave</h2>
+        <p data-i18n="features.header.text">Todas las herramientas que necesitas para gestionar tu flota de manera eficiente</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card" data-aos="fade-up">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <h3 data-i18n="feature1.title">Programación de servicios</h3>
+          <p data-i18n="feature1.text">Crea viajes con código, ruta, chofer y hora de salida en segundos.</p>
+          <button class="feature-more" data-feature="feature1" data-i18n="features.more">Ver más</button>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+              <circle cx="12" cy="13" r="3"></circle>
+            </svg>
+          </div>
+          <h3 data-i18n="feature2.title">Captura de kilometraje</h3>
+          <p data-i18n="feature2.text">Toma foto del odómetro y registra kilómetros al instante desde la app móvil.</p>
+          <button class="feature-more" data-feature="feature2" data-i18n="features.more">Ver más</button>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 3v3"></path>
+              <path d="M10 18v3"></path>
+              <path d="M5 7v10h14V7H5z"></path>
+              <path d="M4 15h16"></path>
+            </svg>
+          </div>
+          <h3 data-i18n="feature3.title">Gestión de combustible</h3>
+          <p data-i18n="feature3.text">Registra galones cargados, calcula kms/galón y obtiene reportes de eficiencia automáticamente.</p>
+          <button class="feature-more" data-feature="feature3" data-i18n="features.more">Ver más</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Modal -->
+  <div class="modal" id="featureModal">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div class="feature-detail">
+        <h3 id="featureTitle"></h3>
+        <div class="feature-demo">
+          <div class="feature-demo-placeholder" id="featureDemo"></div>
+        </div>
+        <p id="featureDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="how.title">¿Cómo funciona?</h2>
+        <p data-i18n="how.text">Un proceso simple y eficiente para gestionar tus servicios de transporte</p>
+      </div>
+
+      <!-- Desktop Timeline -->
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-steps">
+          <!-- Step 1 -->
+          <div class="timeline-step" data-aos="fade-up">
+            <div class="step-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+            <h3 data-i18n="how.step1.title">Inicia tu servicio</h3>
+            <p data-i18n="how.step1.text">Botón grande "Iniciar Servicio" en la app.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-step" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path>
+                <circle cx="12" cy="13" r="3"></circle>
+              </svg>
+            </div>
+            <h3 data-i18n="how.step2.title">Registra odómetro</h3>
+            <p data-i18n="how.step2.text">Foto + campo de kilómetros.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-step" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 3v3"></path>
+                <path d="M10 18v3"></path>
+                <path d="M5 7v10h14V7H5z"></path>
+                <path d="M4 15h16"></path>
+              </svg>
+            </div>
+            <h3 data-i18n="how.step3.title">Carga combustible</h3>
+            <p data-i18n="how.step3.text">Indica galones y tipo de combustible.</p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-step" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 data-i18n="how.step4.title">Consulta reportes</h3>
+            <p data-i18n="how.step4.text">Accede a tu dashboard web y exporta datos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="benefits.title">Beneficios</h2>
+        <p data-i18n="benefits.text">Optimiza tus operaciones y reduce costos con nuestra solución integral</p>
+      </div>
+
+      <div class="benefits-grid">
+        <!-- Benefit 1 -->
+        <div class="benefit-card bg-blue-light" data-aos="fade-up">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3 data-i18n="benefits.time.title">Ahorro en tiempo</h3>
+          <p data-i18n="benefits.time.text">Reduce 80% del tiempo de reporte manual.</p>
+        </div>
+
+        <!-- Benefit 2 -->
+        <div class="benefit-card bg-green-light" data-aos="fade-up" data-aos-delay="100">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+          </div>
+          <h3 data-i18n="benefits.cost.title">Optimización de costes</h3>
+          <p data-i18n="benefits.cost.text">Mejora tu rendimiento kms/galón hasta un 20%.</p>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="benefit-card bg-purple-light" data-aos="fade-up" data-aos-delay="200">
+          <div class="benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <h3 data-i18n="benefits.trace.title">Trazabilidad total</h3>
+          <p data-i18n="benefits.trace.text">Registra y exporta cada detalle de tus rutas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="pricing.header.title">Planes y precios</h2>
+        <p data-i18n="pricing.header.text">Elige el plan que mejor se adapte a las necesidades de tu flota</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Starter Plan -->
+        <div class="pricing-card" data-aos="fade-up">
+          <div class="pricing-header">
+            <h3 data-i18n="plan.starter.name">Starter</h3>
+            <p data-i18n="plan.starter.desc">Para flotas pequeñas que inician su digitalización</p>
+            <div class="pricing-price">
+              <span class="price" data-i18n="plan.starter.price">USD 19</span>
+              <span class="unit" data-i18n="pricing.unit">/ equipo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.starter.f1">Programación de servicios</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.starter.f2">Foto de odómetro</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.starter.f3">Reportes básicos</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="#contact" class="btn btn-outline" data-i18n="pricing.select">Seleccionar</a>
+          </div>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="100">
+          <div class="popular-tag" data-i18n="plan.pro.tag">Más popular</div>
+          <div class="pricing-header">
+            <h3 data-i18n="plan.pro.name">Pro</h3>
+            <p data-i18n="plan.pro.desc">Para flotas medianas con necesidades avanzadas</p>
+            <div class="pricing-price">
+              <span class="price" data-i18n="plan.pro.price">USD 29</span>
+              <span class="unit" data-i18n="pricing.unit">/ equipo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.pro.f1">Todo Starter</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.pro.f2">Control de combustible</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.pro.f3">Dashboard avanzado</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="#contact" class="btn btn-primary" data-i18n="pricing.select">Seleccionar</a>
+          </div>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="pricing-header">
+            <h3 data-i18n="plan.enterprise.name">Enterprise</h3>
+            <p data-i18n="plan.enterprise.desc">Para flotas grandes con necesidades personalizadas</p>
+            <div class="pricing-price">
+              <span class="price" data-i18n="plan.enterprise.price">USD 49</span>
+              <span class="unit" data-i18n="pricing.unit">/ equipo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.enterprise.f1">Todo Pro</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.enterprise.f2">API / Integraciones</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.enterprise.f3">Soporte 24/7</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="#contact" class="btn btn-outline" data-i18n="pricing.select">Seleccionar</a>
+          </div>
+        </div>
+        
+        <!-- Plan Premium -->
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="pricing-header">
+            <h3 data-i18n="plan.premium.name">Premium</h3>
+            <p data-i18n="plan.premium.desc">Para flotas exigentes que buscan optimización total</p>
+            <div class="pricing-price">
+              <span class="price" data-i18n="plan.premium.price">USD 79</span>
+              <span class="unit" data-i18n="pricing.unit">/ equipo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.premium.f1">Todo Enterprise</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.premium.f2">IA predictiva de rutas</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.premium.f3">Automatización avanzada</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="#contact" class="btn btn-outline" data-i18n="pricing.select">Seleccionar</a>
+          </div>
+        </div>
+        
+        <!-- Plan Temporal/Seasonal -->
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="pricing-header">
+            <h3 data-i18n="plan.seasonal.name">Temporal</h3>
+            <p data-i18n="plan.seasonal.desc">Para necesidades por temporada con máxima flexibilidad</p>
+            <div class="pricing-price">
+              <span class="price" data-i18n="plan.seasonal.price">USD 39</span>
+              <span class="unit" data-i18n="pricing.unit">/ equipo / mes</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.seasonal.f1">Sin compromiso a largo plazo</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.seasonal.f2">Todas las características Pro</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="check-icon">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span data-i18n="plan.seasonal.f3">Escalado según demanda</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="#contact" class="btn btn-outline" data-i18n="pricing.select">Seleccionar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="team.title">Nuestro Equipo</h2>
+        <p data-i18n="team.text">Conoce a los profesionales detrás de Co-Box Logistics</p>
+      </div>
+      
+      <div class="team-grid">
+        <div class="team-member" data-aos="fade-up">
+          <div class="member-image">
+            <img src="assets/images/team/member1.jpg" alt="Joseph Rodriguez">
+          </div>
+          <h3 data-i18n="team.joseph">Joseph Rodriguez</h3>
+          <p data-i18n="team.joseph.role">Ing. Software</p>
+        </div>
+        
+        <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+          <div class="member-image">
+            <img src="assets/images/team/member2.jpg" alt="Raul Sanchez">
+          </div>
+          <h3 data-i18n="team.raul">Raul Sanchez</h3>
+          <p data-i18n="team.raul.role">Ing. Software</p>
+        </div>
+        
+        <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+          <div class="member-image">
+            <img src="assets/images/team/member3.jpg" alt="Stephano Espinoza">
+          </div>
+          <h3 data-i18n="team.stephano">Stephano Espinoza</h3>
+          <p data-i18n="team.stephano.role">Ing. Software</p>
+        </div>
+        
+        <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+          <div class="member-image">
+            <img src="assets/images/team/member4.jpg" alt="Merly Salon">
+          </div>
+          <h3 data-i18n="team.merly">Merly Salon</h3>
+          <p data-i18n="team.merly.role">Ing. Software</p>
+        </div>
+        
+        <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+          <div class="member-image">
+            <img src="assets/images/team/member5.jpg" alt="Angel Berrospi">
+          </div>
+          <h3 data-i18n="team.angel">Angel Berrospi</h3>
+          <p data-i18n="team.angel.role">Ing. Software</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <div class="section-header light">
+        <h2 data-i18n="testimonials.header.title">Lo que dicen nuestros clientes</h2>
+        <p data-i18n="testimonials.header.text">Empresas que ya están optimizando su gestión de flotas con Co-Box Logistics</p>
+      </div>
+
+      <div class="testimonial-slider">
+        <div class="testimonial-track">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                  <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                </svg>
+              </div>
+              <p class="testimonial-text" data-i18n="testimonial1.text">"Co-Box Logistics nos ha permitido ahorrar un 15% en consumo de combustible en solo 2 meses."</p>
+              <div class="testimonial-author">
+                <img src="assets/images/testimonials/client1.jpg" alt="Juan Pérez" class="author-image">
+                <div class="author-info">
+                  <h4 data-i18n="testimonial1.author">Juan Pérez</h4>
+                  <p data-i18n="testimonial1.position">Gerente de Operaciones en FríoLogística</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                  <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                </svg>
+              </div>
+              <p class="testimonial-text" data-i18n="testimonial2.text">"La captura de odómetro desde la app móvil nos ha liberado completamente de errores manuales."</p>
+              <div class="testimonial-author">
+                <img src="assets/images/testimonials/client2.jpg" alt="María García" class="author-image">
+                <div class="author-info">
+                  <h4 data-i18n="testimonial2.author">María García</h4>
+                  <p data-i18n="testimonial2.position">Operaciones en TransCold</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="quote-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+                  <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                </svg>
+              </div>
+              <p class="testimonial-text" data-i18n="testimonial3.text">"El dashboard nos permite tomar decisiones basadas en datos reales, no en suposiciones."</p>
+              <div class="testimonial-author">
+                <img src="assets/images/testimonials/client3.jpg" alt="Carlos Rodríguez" class="author-image">
+                <div class="author-info">
+                  <h4 data-i18n="testimonial3.author">Carlos Rodríguez</h4>
+                  <p data-i18n="testimonial3.position">Director de Logística en Express Delivery</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Controls -->
+        <div class="testimonial-controls">
+          <button class="testimonial-arrow prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <div class="testimonial-dots">
+            <button class="testimonial-dot active" data-index="0"></button>
+            <button class="testimonial-dot" data-index="1"></button>
+            <button class="testimonial-dot" data-index="2"></button>
+          </div>
+          <button class="testimonial-arrow next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="contact.header.title">Contáctanos</h2>
+        <p data-i18n="contact.header.text">¿Listo para optimizar tu flota? Completa el formulario y nos pondremos en contacto contigo.</p>
+      </div>
+
+      <div class="contact-form-container">
+        <form id="contactForm" class="contact-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name" data-i18n="contact.name.label">Nombre completo</label>
+              <input type="text" id="name" name="name" data-i18n-attr="placeholder|contact.name.placeholder" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" data-i18n="contact.email.label">Correo electrónico</label>
+              <input type="email" id="email" name="email" data-i18n-attr="placeholder|contact.email.placeholder" placeholder="tu@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="company" data-i18n="contact.company.label">Empresa</label>
+              <input type="text" id="company" name="company" data-i18n-attr="placeholder|contact.company.placeholder" placeholder="Nombre de tu empresa">
+            </div>
+
+            <div class="form-group">
+              <label for="fleet-size" data-i18n="contact.fleet.label">Tamaño de flota</label>
+              <select id="fleet-size" name="fleet-size">
+                <option value="" disabled selected data-i18n="contact.fleet.select">Selecciona una opción</option>
+                <option value="1-5" data-i18n="contact.fleet.option1">1-5 vehículos</option>
+                <option value="6-20" data-i18n="contact.fleet.option2">6-20 vehículos</option>
+                <option value="21-50" data-i18n="contact.fleet.option3">21-50 vehículos</option>
+                <option value="50+" data-i18n="contact.fleet.option4">Más de 50 vehículos</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-i18n="contact.message.label">Mensaje</label>
+            <textarea id="message" name="message" data-i18n-attr="placeholder|contact.message.placeholder" placeholder="Cuéntanos sobre tus necesidades específicas" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-text" data-i18n="contact.submit">Enviar mensaje</span>
+            <span class="btn-loading">
+              <svg class="spinner" viewBox="0 0 50 50">
+                <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+              </svg>
+              <span data-i18n="contact.submitting">Enviando...</span>
+            </span>
+          </button>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h3 data-i18n="contact.success.title">¡Mensaje enviado!</h3>
+          <p data-i18n="contact.success.text">Gracias por contactarnos. Nuestro equipo se pondrá en contacto contigo a la brevedad.</p>
+          <button class="btn btn-primary" id="sendAnother" data-i18n="contact.success.action">Enviar otro mensaje</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Co-Box Logistics</h3>
+          <p data-i18n="footer.about">Solución integral para la gestión de flotas de transporte refrigerado y seco.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.quicklinks">Enlaces rápidos</h4>
+          <ul>
+            <li><a href="#features" data-i18n="nav.features">Características</a></li>
+            <li><a href="#pricing" data-i18n="nav.pricing">Precios</a></li>
+            <li><a href="#testimonials" data-i18n="nav.testimonials">Testimonios</a></li>
+            <li><a href="#team" data-i18n="team.title">Equipo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.legal">Legal</h4>
+          <ul>
+            <li><a href="#" data-i18n="footer.terms">Términos de servicio</a></li>
+            <li><a href="#" data-i18n="footer.privacy">Política de privacidad</a></li>
+            <li><a href="#" data-i18n="footer.cookies">Cookies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact">Contacto</h4>
+          <p data-i18n="footer.email">info@co-boxlogistics.com</p>
+          <p data-i18n="footer.phone">+51 987 654 321</p>
+          <div class="social-links">
+            <a href="#" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Co-Box Logistics. <span data-i18n="footer.copyright">Todos los derechos reservados.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/translations/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

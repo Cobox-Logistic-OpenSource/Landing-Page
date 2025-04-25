@@ -1,0 +1,352 @@
+// translations.js
+window.translations = {
+  es: {
+    // Navegación
+    "nav.features":     "Características",
+    "nav.howItWorks":   "Cómo funciona",
+    "nav.pricing":      "Precios",
+    "nav.testimonials": "Testimonios",
+    "nav.contact":      "Contacto",
+    "nav.demo":         "Solicita tu demo",
+
+    // Hero
+    "hero.title":       "Digitaliza tu gestión de flotas refrigeradas",
+    "hero.text":        "Programa rutas, captura odómetro, controla combustible y temperatura… todo en un solo lugar.",
+    "hero.freeTrial":   "Prueba gratis 14 días",
+    "hero.watchDemo":   "Ver demo en vídeo",
+    
+    // About
+    "about.title":      "Sobre Nosotros",
+    "about.text":       "La startup Co-Box Logistics ofrece una solución tecnológica avanzada al sector del transporte de carga en Perú.",
+    "about.description": "Implementamos una plataforma web inteligente encargada de segmentar y optimizar los procesos logísticos en distintas fases. Estas comprenden el control de kilometraje de las unidades, la captura de evidencias fotográficas al momento de la entrega, la geolocalización en tiempo real y la generación automatizada de reportes e indicadores de desempeño.",
+
+    // Sección Features
+    "features.header.title": "Características clave",
+    "features.header.text":  "Todas las herramientas que necesitas para gestionar tu flota de manera eficiente",
+    "features.more":     "Ver más",
+    "feature1.title":    "Programación de servicios",
+    "feature1.text":     "Crea viajes con código, ruta, chofer y hora de salida en segundos.",
+    "feature2.title":    "Captura de kilometraje",
+    "feature2.text":     "Toma foto del odómetro y registra kilómetros al instante desde la app móvil.",
+    "feature3.title":    "Gestión de combustible",
+    "feature3.text":     "Registra galones cargados, calcula kms/galón y obtiene reportes de eficiencia automáticamente.",
+    "feature4.title":    "Temperatura en ruta",
+    "feature4.text":     "Supervisa temperatura en tiempo real y recibe alertas si hay desviaciones críticas.",
+    "feature5.title":    "Rastreo de paradas",
+    "feature5.text":     "Registra ubicaciones GPS en cada punto (origen, entrega o recarga) para trazabilidad total.",
+    "feature6.title":    "Análisis de datos",
+    "feature6.text":     "Exporta a Excel y visualiza métricas de rendimiento en tu panel web o app.",
+
+    // How It Works
+    "how.title":        "¿Cómo funciona?",
+    "how.text":         "Un proceso simple y eficiente para gestionar tus servicios de transporte",
+    "how.step1.title":  "Inicia tu servicio",
+    "how.step1.text":   "Botón grande \"Iniciar Servicio\" en la app.",
+    "how.step2.title":  "Registra odómetro",
+    "how.step2.text":   "Foto + campo de kilómetros.",
+    "how.step3.title":  "Carga combustible",
+    "how.step3.text":   "Indica galones y tipo de combustible.",
+    "how.step4.title":  "Consulta reportes",
+    "how.step4.text":   "Accede a tu dashboard web y exporta datos.",
+
+    // Benefits
+    "benefits.title":    "Beneficios",
+    "benefits.text":     "Optimiza tus operaciones y reduce costos con nuestra solución integral",
+    "benefits.time.title":   "Ahorro en tiempo",
+    "benefits.time.text":    "Reduce 80% del tiempo de reporte manual.",
+    "benefits.cost.title":   "Optimización de costes",
+    "benefits.cost.text":    "Mejora tu rendimiento kms/galón hasta un 20%.",
+    "benefits.trace.title":  "Trazabilidad total",
+    "benefits.trace.text":   "Registra y exporta cada detalle de tus rutas.",
+    
+    // Pricing
+    "pricing.header.title":   "Planes y precios",
+    "pricing.header.text":    "Elige el plan que mejor se adapte a las necesidades de tu flota",
+    "pricing.unit":           "/ equipo",
+    "pricing.select":         "Seleccionar",
+    "plan.starter.name":      "Starter",
+    "plan.starter.desc":      "Para flotas pequeñas que inician su digitalización",
+    "plan.starter.price":     "USD 19",
+    "plan.starter.f1":        "Programación de servicios",
+    "plan.starter.f2":        "Foto de odómetro",
+    "plan.starter.f3":        "Reportes básicos",
+    "plan.starter.f4":        "Soporte por email",
+    "plan.pro.name":          "Pro",
+    "plan.pro.desc":          "Para flotas medianas con necesidades avanzadas",
+    "plan.pro.price":         "USD 29",
+    "plan.pro.tag":           "Más popular",
+    "plan.pro.f1":            "Todo Starter",
+    "plan.pro.f2":            "Control de combustible",
+    "plan.pro.f3":            "Dashboard avanzado",
+    "plan.pro.f4":            "Geolocalización",
+    "plan.pro.f5":            "Soporte prioritario",
+    "plan.enterprise.name":   "Enterprise",
+    "plan.enterprise.desc":   "Para flotas grandes con necesidades personalizadas",
+    "plan.enterprise.price":  "USD 49",
+    "plan.enterprise.f1":     "Todo Pro",
+    "plan.enterprise.f2":     "API / Integraciones",
+    "plan.enterprise.f3":     "Soporte 24/7",
+    "plan.enterprise.f4":     "Personalización",
+    "plan.enterprise.f5":     "Capacitación dedicada",
+    
+    // Planes adicionales
+    "plan.premium.name":   "Premium",
+    "plan.premium.desc":   "Para flotas exigentes que buscan optimización total",
+    "plan.premium.price":  "USD 79",
+    "plan.premium.f1":     "Todo Enterprise",
+    "plan.premium.f2":     "IA predictiva de rutas",
+    "plan.premium.f3":     "Automatización avanzada",
+    
+    "plan.seasonal.name":  "Temporal",
+    "plan.seasonal.desc":  "Para necesidades por temporada con máxima flexibilidad",
+    "plan.seasonal.price": "USD 39",
+    "plan.seasonal.f1":    "Sin compromiso a largo plazo",
+    "plan.seasonal.f2":    "Todas las características Pro",
+    "plan.seasonal.f3":    "Escalado según demanda",
+    
+    // Team section
+    "team.title":          "Nuestro Equipo",
+    "team.text":           "Conoce a los profesionales detrás de Co-Box Logistics",
+    "team.joseph":         "Joseph Rodriguez",
+    "team.joseph.role":    "Ing. Software",
+    "team.stephano":       "Stephano Espinoza",
+    "team.stephano.role":  "Ing. Software",
+    "team.merly":          "Merly Salon",
+    "team.merly.role":     "Ing. Software",
+    "team.angel":          "Angel Berrospi",
+    "team.angel.role":     "Ing. Software",
+    "team.raul":           "Raul Sanchez",
+    "team.raul.role":      "Ing. Software",
+
+    // Testimonios
+    "testimonials.header.title": "Lo que dicen nuestros clientes",
+    "testimonials.header.text":  "Empresas que ya están optimizando su gestión de flotas con Co-Box Logistics",
+    
+    // Testimonios específicos
+    "testimonial1.text":     "\"Co-Box Logistics nos ha permitido ahorrar un 15% en consumo de combustible en solo 2 meses.\"",
+    "testimonial1.author":   "Juan Pérez",
+    "testimonial1.position": "Gerente de Operaciones en FríoLogística",
+    
+    "testimonial2.text":     "\"La captura de odómetro desde la app móvil nos ha liberado completamente de errores manuales.\"",
+    "testimonial2.author":   "María García",
+    "testimonial2.position": "Operaciones en TransCold",
+    
+    "testimonial3.text":     "\"El dashboard nos permite tomar decisiones basadas en datos reales, no en suposiciones.\"",
+    "testimonial3.author":   "Carlos Rodríguez",
+    "testimonial3.position": "Director de Logística en Express Delivery",
+
+    // Contact
+    "contact.header.title": "Contáctanos",
+    "contact.header.text":  "¿Listo para optimizar tu flota? Completa el formulario y nos pondremos en contacto contigo.",
+    "contact.name.label":   "Nombre completo",
+    "contact.name.placeholder": "Tu nombre",
+    "contact.email.label":  "Correo electrónico",
+    "contact.email.placeholder": "tu@email.com",
+    "contact.company.label":    "Empresa",
+    "contact.company.placeholder": "Nombre de tu empresa",
+    "contact.fleet.label":       "Tamaño de flota",
+    "contact.fleet.select":      "Selecciona una opción",
+    "contact.fleet.option1":     "1-5 vehículos",
+    "contact.fleet.option2":     "6-20 vehículos",
+    "contact.fleet.option3":     "21-50 vehículos",
+    "contact.fleet.option4":     "Más de 50 vehículos",
+    "contact.message.label":     "Mensaje",
+    "contact.message.placeholder": "Cuéntanos sobre tus necesidades específicas",
+    "contact.submit":            "Enviar mensaje",
+    "contact.submitting":        "Enviando...",
+    "contact.success.title":     "¡Mensaje enviado!",
+    "contact.success.text":      "Gracias por contactarnos. Nuestro equipo se pondrá en contacto contigo a la brevedad.",
+    "contact.success.action":    "Enviar otro mensaje",
+
+    // Footer
+    "footer.about":         "Solución integral para la gestión de flotas de transporte refrigerado y seco.",
+    "footer.quicklinks":    "Enlaces rápidos",
+    "footer.help":          "Ayuda",
+    "footer.legal":         "Legal",
+    "footer.terms":         "Términos de servicio",
+    "footer.privacy":       "Política de privacidad",
+    "footer.cookies":       "Cookies",
+    "footer.contact":       "Contacto",
+    "footer.email":         "info@co-boxlogistics.com",
+    "footer.phone":         "+51 987 654 321",
+    "footer.copyright":     "Todos los derechos reservados.",
+
+    // Video Modal
+    "videoModal.title":    "Video demo de Co-Box Logistics"
+  },
+
+  en: {
+    // Navigation
+    "nav.features":     "Features",
+    "nav.howItWorks":   "How it works",
+    "nav.pricing":      "Pricing",
+    "nav.testimonials": "Testimonials",
+    "nav.contact":      "Contact",
+    "nav.demo":         "Request demo",
+
+    // Hero
+    "hero.title":       "Digitize your refrigerated fleet management",
+    "hero.text":        "Schedule routes, capture odometer, control fuel and temperature... all in one place.",
+    "hero.freeTrial":   "Try free for 14 days",
+    "hero.watchDemo":   "Watch video demo",
+    
+    // About
+    "about.title":      "About Us",
+    "about.text":       "Co-Box Logistics startup offers an advanced technological solution to the cargo transport sector in Peru.",
+    "about.description": "We implement an intelligent web platform designed to segment and optimize logistics processes in different phases. These include control of vehicle mileage, capturing photographic evidence at delivery, real-time geolocation, and automated generation of reports and performance indicators.",
+
+    // Features Section
+    "features.header.title": "Key features",
+    "features.header.text":  "All the tools you need to manage your fleet efficiently",
+    "features.more":     "See more",
+    "feature1.title":    "Service scheduling",
+    "feature1.text":     "Create trips with code, route, driver and departure time in seconds.",
+    "feature2.title":    "Mileage capture",
+    "feature2.text":     "Take a photo of the odometer and record kilometers instantly from the mobile app.",
+    "feature3.title":    "Fuel management",
+    "feature3.text":     "Record loaded gallons, calculate km/gallon and get efficiency reports automatically.",
+    "feature4.title":    "In-route temperature",
+    "feature4.text":     "Monitor temperature in real time and receive alerts if there are critical deviations.",
+    "feature5.title":    "Stop tracking",
+    "feature5.text":     "Record GPS locations at each point (origin, delivery or refill) for total traceability.",
+    "feature6.title":    "Data analysis",
+    "feature6.text":     "Export to Excel and visualize performance metrics on your web panel or app.",
+
+    // How It Works
+    "how.title":        "How does it work?",
+    "how.text":         "A simple and efficient process to manage your transport services",
+    "how.step1.title":  "Start your service",
+    "how.step1.text":   "Large \"Start Service\" button in the app.",
+    "how.step2.title":  "Record odometer",
+    "how.step2.text":   "Photo + kilometer field.",
+    "how.step3.title":  "Load fuel",
+    "how.step3.text":   "Indicate gallons and fuel type.",
+    "how.step4.title":  "Check reports",
+    "how.step4.text":   "Access your web dashboard and export data.",
+
+    // Benefits
+    "benefits.title":    "Benefits",
+    "benefits.text":     "Optimize your operations and reduce costs with our comprehensive solution",
+    "benefits.time.title":   "Time savings",
+    "benefits.time.text":    "Reduce manual reporting time by 80%.",
+    "benefits.cost.title":   "Cost optimization",
+    "benefits.cost.text":    "Improve your km/gallon performance by up to 20%.",
+    "benefits.trace.title":  "Total traceability",
+    "benefits.trace.text":   "Record and export every detail of your routes.",
+    
+    // Pricing
+    "pricing.header.title":   "Plans & Pricing",
+    "pricing.header.text":    "Choose the plan that best fits your fleet's needs",
+    "pricing.unit":           "/ vehicle",
+    "pricing.select":         "Select",
+    "plan.starter.name":      "Starter",
+    "plan.starter.desc":      "For small fleets beginning digital transformation",
+    "plan.starter.price":     "USD 19",
+    "plan.starter.f1":        "Service Scheduling",
+    "plan.starter.f2":        "Odometer Photo",
+    "plan.starter.f3":        "Basic Reports",
+    "plan.starter.f4":        "Email Support",
+    "plan.pro.name":          "Pro",
+    "plan.pro.desc":          "For medium fleets with advanced needs",
+    "plan.pro.price":         "USD 29",
+    "plan.pro.tag":           "Most Popular",
+    "plan.pro.f1":            "All Starter Features",
+    "plan.pro.f2":            "Fuel Control",
+    "plan.pro.f3":            "Advanced Dashboard",
+    "plan.pro.f4":            "Real-time GPS",
+    "plan.pro.f5":            "Priority Support",
+    "plan.enterprise.name":   "Enterprise",
+    "plan.enterprise.desc":   "For large fleets needing custom solutions",
+    "plan.enterprise.price":  "USD 49",
+    "plan.enterprise.f1":     "All Pro Features",
+    "plan.enterprise.f2":     "API & Integrations",
+    "plan.enterprise.f3":     "24/7 Support",
+    "plan.enterprise.f4":     "Customization",
+    "plan.enterprise.f5":     "Dedicated Training",
+    
+    // Planes adicionales
+    "plan.premium.name":   "Premium",
+    "plan.premium.desc":   "For demanding fleets seeking total optimization",
+    "plan.premium.price":  "USD 79",
+    "plan.premium.f1":     "All Enterprise features",
+    "plan.premium.f2":     "Predictive route AI",
+    "plan.premium.f3":     "Advanced automation",
+    
+    "plan.seasonal.name":  "Seasonal",
+    "plan.seasonal.desc":  "For seasonal needs with maximum flexibility",
+    "plan.seasonal.price": "USD 39",
+    "plan.seasonal.f1":    "No long-term commitment",
+    "plan.seasonal.f2":    "All Pro features",
+    "plan.seasonal.f3":    "Scale according to demand",
+    
+    // Team section
+    "team.title":          "Our Team",
+    "team.text":           "Meet the professionals behind Co-Box Logistics",
+    "team.joseph":         "Joseph Rodriguez",
+    "team.joseph.role":    "Software Engineer",
+    "team.stephano":       "Stephano Espinoza",
+    "team.stephano.role":  "Software Engineer",
+    "team.merly":          "Merly Salon",
+    "team.merly.role":     "Software Engineer",
+    "team.angel":          "Angel Berrospi",
+    "team.angel.role":     "Software Engineer",
+    "team.raul":           "Raul Sanchez",
+    "team.raul.role":      "Software Engineer",
+
+    // Testimonios
+    "testimonials.header.title": "What Our Clients Say",
+    "testimonials.header.text":  "Companies already optimizing their fleet management with Co-Box Logistics",
+    
+    // Testimonios específicos
+    "testimonial1.text":     "\"Co-Box Logistics has helped us save 15% on fuel consumption in just 2 months.\"",
+    "testimonial1.author":   "John Perez",
+    "testimonial1.position": "Operations Manager at ColdLogistics",
+    
+    "testimonial2.text":     "\"The odometer capture from the mobile app has completely freed us from manual errors.\"",
+    "testimonial2.author":   "Mary Garcia",
+    "testimonial2.position": "Operations at TransCold",
+    
+    "testimonial3.text":     "\"The dashboard allows us to make decisions based on real data, not assumptions.\"",
+    "testimonial3.author":   "Charles Rodriguez",
+    "testimonial3.position": "Logistics Director at Express Delivery",
+
+    // Contact
+    "contact.header.title": "Contact Us",
+    "contact.header.text":  "Ready to optimize your fleet? Fill out the form and we'll get in touch.",
+    "contact.name.label":   "Full Name",
+    "contact.name.placeholder": "Your name",
+    "contact.email.label":  "Email",
+    "contact.email.placeholder": "you@example.com",
+    "contact.company.label":    "Company",
+    "contact.company.placeholder": "Your company name",
+    "contact.fleet.label":       "Fleet Size",
+    "contact.fleet.select":      "Select an option",
+    "contact.fleet.option1":     "1-5 vehicles",
+    "contact.fleet.option2":     "6-20 vehicles",
+    "contact.fleet.option3":     "21-50 vehicles",
+    "contact.fleet.option4":     "Over 50 vehicles",
+    "contact.message.label":     "Message",
+    "contact.message.placeholder": "Tell us about your specific needs",
+    "contact.submit":            "Send Message",
+    "contact.submitting":        "Sending...",
+    "contact.success.title":     "Message Sent!",
+    "contact.success.text":      "Thank you for reaching out. Our team will contact you shortly.",
+    "contact.success.action":    "Send Another Message",
+
+    // Footer
+    "footer.about":         "Comprehensive solution for refrigerated and dry transport fleet management.",
+    "footer.quicklinks":    "Quick Links",
+    "footer.help":          "Help",
+    "footer.legal":         "Legal",
+    "footer.terms":         "Terms of Service",
+    "footer.privacy":       "Privacy Policy",
+    "footer.cookies":       "Cookies",
+    "footer.contact":       "Contact",
+    "footer.email":         "info@co-boxlogistics.com",
+    "footer.phone":         "+51 987 654 321",
+    "footer.copyright":     "All rights reserved.",
+
+    // Video Modal
+    "videoModal.title":    "Co-Box Logistics demo video"
+  }
+};
