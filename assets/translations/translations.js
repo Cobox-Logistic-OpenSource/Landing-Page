@@ -8,6 +8,7 @@ window.translations = {
     "nav.testimonials": "Testimonios",
     "nav.contact":      "Contacto",
     "nav.demo":         "Solicita tu demo",
+    "nav.login":        "Iniciar sesión",
 
     // Hero
     "hero.title":       "Digitaliza tu gestión de flotas refrigeradas",
