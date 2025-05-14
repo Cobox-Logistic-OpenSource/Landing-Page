@@ -184,7 +184,7 @@ window.translations = {
     "nav.testimonials": "Testimonials",
     "nav.contact":      "Contact",
     "nav.demo":         "Request demo",
-
+    "nav.login":        "Login",
     // Hero
     "hero.title":       "Digitize your refrigerated fleet management",
     "hero.text":        "Schedule routes, capture odometer, control fuel and temperature... all in one place.",
